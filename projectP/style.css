@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Lighthaus";
+  src: local("lighthaus"), url("fonts/Lighthaus.woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("montserrat"), url("fonts/Montserrat-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("images/BG.png");
+  width: 1920px;
+  height: 900px;
+  position: absolute;
+  z-index: -1;
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding: 22px 0 0 262px;
+}
+
+.top-nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1397px;
+}
+
+.top-nav .menu-item {
+  display: flex;
+  list-style: none;
+}
+
+.top-nav .menu-item .list-item {
+  margin: 0 25px;
+  padding-top: 24px;
+}
+
+.selected-nav-item:hover {
+  background: linear-gradient(92.09deg, #5e3928 -79.4%, #e4a16f 84.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.top-nav .menu-item li a {
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 16px;
+  color: white;
+}
+
+.top-nav .menu-item .logo {
+  margin-right: calc(77px - 25px);
+}
+
+.top-nav .menu-item-btn {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 1207px;
+}
+
+.top-nav .menu-item-btn li {
+  margin-left: 20px;
+}
+
+.menu-item-btn li a {
+  display: block;
+  height: 91px;
+  width: 50px;
+  background-color: white;
+  /* position: absolute; */
+}
+
+.menu-item-btn li a img {
+  padding: 50px 10px;
+}
+
+.header-container {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  padding-top: 232px;
+  padding-left: 261px;
+}
+
+.hit-sales {
+  display: block;
+  font-family: "lighthaus";
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.hit-sales::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 623px;
+  background: linear-gradient(to right, white, transparent);
+  left: 0;
+  bottom: -15px;
+}
+
+.oil-thing-text {
+  font-family: "montserrat";
+  font-size: 50px;
+  color: white;
+  width: 533px;
+  line-height: 96.4%;
+  position: absolute;
+  top: 407px;
+  font-weight: bold;
+}
+
+.price {
+  font-family: "montserrat";
+  font-size: 30px;
+  color: white;
+  justify-content: space-between;
+  position: absolute;
+  top: 543px;
+  word-spacing: 109px;
+  white-space: nowrap;
+}
+
+.price .nums {
+  font-weight: bold;
+}
+
+.btn-buy {
+  display: flex;
+  width: 327px;
+  height: 50px;
+  font-family: "lighthaus";
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 613px;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-buy:hover {
+  background: linear-gradient(#5e3928 20.13%, #e4a16f 92.93%);
+}
+
+.pg1 {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  top: 734px;
+  left: 261px;
+}
+
+.pg2:hover,
+.pg3:hover {
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+}
+
+.pg2 {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: white;
+  top: 734px;
+  left: 284px;
+}
+
+.pg3 {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: white;
+  top: 734px;
+  left: 306px;
+}
+
+.green-box {
+  position: absolute;
+  top: 393px;
+  left: calc(1093px - 261px);
+}
+
+.btn-left {
+  font-family: "lighthaus";
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  width: 87px;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 434px;
+  right: 174px;
+}
+
+.right-part .btn-right {
+  font-family: "lighthaus";
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  width: 87px;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 434px;
+  left: 1831px;
+}
+
+.our-products {
+  position: relative;
+  top: 976px;
+  left: 261px;
+  width: 1397px;
+  height: 1095px;
+}
+
+.our-products h2 {
+  font-family: "lighthaus";
+  font-size: 50px;
+  text-align: center;
+}
+
+.products-list {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.products-list li {
+  position: absolute;
+  display: block;
+  margin-left: 32px;
+  margin-top: 46px;
+}
+
+.item2 {
+  left: 477px;
+}
+
+.item3 {
+  left: 952px;
+}
+
+.item4 {
+  top: 604px;
+}
+
+.item5 {
+  top: 604px;
+  left: 477px;
+}
+
+.item6 {
+  top: 604px;
+  left: 952px;
+}
+
+.products-list .item1:hover img {
+  background-color: rgb(255, 0, 0);
+  opacity: 0.3;
+}
+
+.best-sales {
+  position: relative;
+  padding-top: 1218px;
+  left: 261px;
+  width: 1397px;
+  height: 1095px;
+}
+
+.best-sales h2 {
+  font-family: "lighthaus";
+  font-size: 50px;
+  text-align: center;
+}
+
+.products-list__best {
+  position: relative;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.products-list__best li {
+  position: absolute;
+  display: block;
+  margin-left: 32px;
+  margin-top: 46px;
+}
+
+.item7 {
+  top: 49px;
+}
+
+.item8 {
+  top: 49px;
+  left: 478px;
+}
+
+.item9 {
+  top: 49px;
+  left: 954px;
+}
+
+.products-list__best li p {
+  font-family: "montserrat";
+  font-size: 20px;
+}
+
+.btn-goto {
+  display: flex;
+  width: 327px;
+  height: 50px;
+  font-family: "lighthaus";
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 728px;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-div {
+  width: 1920px;
+  height: 375px;
+  background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
+  margin-top: 930px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 261px;
+}
+
+.footer-container .logo a, p {
+  font-family: "montserrat";
+  color: white;
+  padding-top: 24px;
+}
+
+.footer-nav h3 {
+  font-family: "montserrat";
+  font-size: 18px;
+  color: white;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  line-height: 30px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  font-style: "montserrat";
+  text-decoration: none;
+  color: white;
+  padding: 0;
+}
+.footer-nav p {
+  font-size: 14px;
+  font-style: "montserrat";
+  color: white;
+  line-height: 30px;
+}
+
+.footer-social {
+  position: relative;
+  top: 18px;
+}
+
+.footer-social a{
+  padding-left: 18px;
+}
